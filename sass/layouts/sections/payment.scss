@@ -1,0 +1,45 @@
+.payment {
+    background: $bg-color-light;
+    // background: red;
+    // padding: 60px 0 95px;
+    color: $text-color-dark-1;
+    clip-path: url(#myCurve1);
+    &.section {
+        @include respond-to(1200) {
+            padding: 259px 0 300px;
+        }
+    }
+    .wrapper {
+        text-align: center;
+    }
+    p {
+        font-size: 17px;
+        line-height: 23px;
+        max-width: 530px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    &__images {
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 44px 25px;
+        }
+        img {
+            /* width: auto; */
+            max-width: 143px;
+            /* width: 40% */
+            @include respond-to(900) {
+                width: auto;
+                max-width: unset;
+            }
+        }
+    }
+    .banks {
+        margin-bottom: 40px;
+    }
+    .cards img {
+        width: auto;
+    }
+}

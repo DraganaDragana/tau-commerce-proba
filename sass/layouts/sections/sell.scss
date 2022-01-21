@@ -1,0 +1,89 @@
+.sell {
+    color: $text-color-dark-1;
+    // padding: 40px 0;
+    &.section {
+        @include respond-to(1200) {
+            padding: 40px 0 85px;
+        }
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 47px;
+        @include respond-to(700) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+    &__trial {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        text-align: right;
+        @include respond-to(700) {
+            flex: 1 1 50%;
+        }
+        @include respond-to(900) {
+            flex: 0 0 455px;
+        }
+        @include respond-to(1100) {
+            flex: 0 0 575px;
+        }
+        h2 {
+            font-size: 36px;
+            font-weight: 900;
+            margin-bottom: 25px;
+            @include respond-to(900) {
+                font-size: 46px;
+                line-height: 45px;
+            }
+            @include respond-to(1100) {
+                font-size: 60px;
+            }
+        }
+        p {
+            line-height: 22px;
+            @include respond-to(430) {
+                //what is this
+                width: 90%;
+            }
+            @include respond-to(900) {
+                line-height: 22px;
+                font-size: 18px;
+                width: 80%;
+            }
+            @include respond-to(1100) {
+                font-size: 20px;
+                width: 70%;
+                line-height: 26px;
+            }
+        }
+        .quotes {
+            font-weight: 900;
+            margin: 19px 0;
+        }
+        .founder {
+            font-size: 14px;
+            line-height: 19px;
+            @include respond-to(1100) {
+                font-size: 15px;
+            }
+            span {
+                font-weight: 900;
+            }
+        }
+    }
+    &__img {
+        @include respond-to(700) {
+            order: -1;
+            flex: 1 1 50%;
+        }
+    }
+    .b-btn button:hover {
+        background: $bg-color-dark;
+        /* later change */
+        color: $primary;
+    }
+}

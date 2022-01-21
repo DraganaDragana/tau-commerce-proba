@@ -1,0 +1,146 @@
+.pricing {
+    &.section {
+        @include respond-to(1200) {
+            margin-top: -20px;
+            padding: 0;
+        }
+    }
+    .b-section-title {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    &__desc {
+        font-size: 17px;
+        max-width: 650px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 22px;
+    }
+    &__wrap {
+        max-width: 550px;
+        margin: 56px auto 60px;
+        display: grid;
+        gap: 20px;
+        @include respond-to(1100) {
+            max-width: 1105px;
+            display: flex;
+            align-items: flex-end;
+            gap: 20px;
+        }
+        .content {
+            @include respond-to(1100) {
+                max-width: 277px;
+                margin: 0 auto;
+            }
+        }
+    }
+    &__card {
+        background: $bg-color-dark;
+        color: $text-color-white;
+        padding: 35px 25px;
+        text-align: center;
+        position: relative;
+        /* margin-bottom: 20px; */
+        @include respond-to(1100) {
+            flex: 0 1 274px;
+        }
+        .most-popular {
+            position: absolute;
+            font-size: 14px;
+            font-family: $roboto-condensed;
+            font-weight: 700;
+            background: $primary;
+            color: $text-color-white;
+            padding: 6px 11px;
+            right: 0;
+            top: 19px;
+        }
+        .package {
+            font-family: $roboto-condensed;
+            font-weight: 700;
+            padding-bottom: 43px;
+            p {
+                font-size: 54px;
+                margin-bottom: 3px;
+                small {
+                    font-size: 24px;
+                    color: #525252;
+                }
+            }
+            span {
+                font-size: 26px;
+                color: #d1d1d1;
+            }
+        }
+        .border {
+            height: 2px;
+            background: $text-color-white;
+            width: 100%;
+            position: relative;
+            margin-bottom: 38px;
+            opacity: 0.6;
+            span {
+                border-left: 14px solid transparent;
+                border-right: 14px solid transparent;
+                border-top: 23px solid $text-color-white;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+        }
+        .desc {
+            opacity: 0.7;
+            line-height: 22.3px;
+            @include respond-to(360) {
+                font-size: 17px;
+            }
+        }
+        .btn-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 33px;
+            button {
+                font-weight: 700;
+                color: $text-color-white;
+                background-color: $primary;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 5px;
+                padding: 0 35px;
+                height: 51px;
+                display: block;
+                transition: all 0.4s;
+                &:hover {
+                    color: $primary;
+                    background-color: $text-color-white;
+                }
+            }
+            small {
+                font-size: 15px;
+                color: $text-color-white;
+            }
+        }
+        &--most-popular {
+            padding-top: 0;
+            @include respond-to(1100) {
+                flex: 1 1 325px;
+                position: relative;
+                top: 4px;
+            }
+            .package {
+                padding-top: 59px;
+            }
+            .border {
+                width: 100%;
+                opacity: 1;
+            }
+            .btn-wrap button {
+                @include respond-to(1100) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

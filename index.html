@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+
+<body>
+    <div class="talk-to-a-profesional">
+        <p>Talk to a professional?</p>
+        <span class="phone">
+          +381(60)66244730
+        </span>
+        <span class="emal">
+            hello@taucommerce.com
+        </span>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="wrapper">
+            <ul class="nav">
+                <li><a onclick="toggleNav()" href="#pricing">PRICING</a></li>
+                <li><a onclick="toggleNav()" href="#about-us">ABOUT US</a></li>
+                <li><a onclick="toggleNav()" href="#contact">CONTACT</a></li>
+                <li><a onclick="toggleNav()" href="#freetrial">START FREE TRIAL</a></li>
+            </ul>
+
+            <div class="info">
+                <p>hello@taucommerce.com </p>
+                <p>+381(60)6624730</p>
+                <p>Monday - Friday 09:00 - 17:00 CEST</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="wrapper">
+            <div class="header__logo">
+                <img src="./images/logo.png" alt="Logo">
+                <div>
+                    <h5>TAU Commerce</h5>
+                    <p>new era of e-commerce</p>
+                </div>
+            </div>
+            <div class="header__right">
+                <div class="info">
+                    hello@taucommerce.com | +381(60)6624730 Monday - Friday 09:00 - 17:00 CEST
+                </div>
+                <ul class="nav">
+                    <li><a class="a" href="#pricing">PRICING</a></li>
+                    <li><a class="a" href="#about-us">ABOUT US</a></li>
+                    <li><a class="a" href="#contact">CONTACT</a></li>
+                    <li><a class="a" href="#freetrial">START FREE TRIAL</a></li>
+                </ul>
+            </div>
+
+            <div class="header__menu" onclick="toggleNav()">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="wrapper">
+
+            <div class="hero__img">
+                <img src="./images/laptop.jpeg" alt="laptop">
+            </div>
+
+            <div class="hero__trial">
+                <h2>Start selling in two minutes</h2>
+                <p>Everything that you may possibly need at the tip of your fingers. Ready to start selling online?</p>
+                <form>
+                    <input placeholder="Enter your email address" type="text">
+                    <button>START FREE TRIAL</button>
+                </form>
+
+                <span>Try TAU Commerce free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from TAU Commerce.</span>
+            </div>
+
+            <a class="hero__scroll-down" href="#sell">
+                <small>LEARN MORE</small>
+                <span></span>
+            </a>
+        </div>
+    </div>
+    <!-- DONE -->
+    <svg class="myCurve" width="0" height="0">
+        <defs>
+          <clipPath id="myCurve" clipPathUnits="objectBoundingBox" >
+              <path
+              d="M 0,1
+                L 0,0
+                L 1,0
+                L 1,1
+                C .8 .89, .25 .85, 0 .83
+                Z"
+            />
+          </clipPath>
+        </defs>
+    </svg>
+
+
+    <!-- SELL -->
+    <div class="sell section" id="sell">
+        <div class="wrapper">
+
+            <div class="sell__trial">
+                <h2>Sell around the world</h2>
+                <p class="desc">Our system comes pre-optimised and allows you to use all the possibilities that you have at your fingertips.</p>
+                <p class="quotes">“We believed BigCommerce had made greater strides than other platforms in building features like headless commerce integrations and multi-currency support.”</p>
+                <p class="founder">
+                    <span>FILIP KUNJADIĆ</span> ECOMMERCE ARCHITECT, PIXEL2GO
+                </p>
+                <div class="b-btn">
+                    <button>START FREE TRIAL</button>
+                    <small>No credit card required</small>
+                </div>
+            </div>
+
+            <div class="sell__img">
+                <img src="./images/laptop.jpeg" alt="laptop">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- PAYMENT -->
+    <div class="payment section">
+        <div class="wrapper">
+            <h2 class="b-section-title-smaller">INTEGRATED PAYMENTS</h2>
+
+            <p>With our system, you get out-of-the-box solutions for integrating major payment providers. If your desired payment is not currently integrated we will integrate it for free.</p>
+
+            <div class="payment__images">
+                <div class="banks">
+                    <img src="./images/payment/chipcard.jpg" alt="PayPal">
+                    <img src="./images/payment/chipcard.jpg" alt="Stripe">
+                    <img src="./images/payment/chipcard.jpg" alt="Chipcard">
+                    <img src="./images/payment/intesa.jpg" alt="Komercijalna Banka">
+                    <img src="./images/payment/intesa.jpg" alt="Banka Intesa">
+                </div>
+
+                <div class="cards">
+                    <img src="./images/payment/visa.jpg" alt="Visa">
+                    <img src="./images/payment/mastercard.jpg" alt="Mastercard">
+                    <img src="./images/payment/maestro.jpg" alt="Maestro">
+                    <img src="./images/payment/visa-secure.jpg" alt="DinaCard">
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <!-- DONE -->
+    <svg class="myCurve1" width="0" height="0">
+        <defs>
+          <clipPath id="myCurve1" clipPathUnits="objectBoundingBox">
+             <path
+            d="M 0,1
+                L 0,0
+                C .2 .13, .65 .17, 1 .21
+                L 1,1
+                C 1 .99, .78 .83, 0 .79
+                Z"
+          />
+          </clipPath>
+        </defs>
+    </svg>
+
+    <!--OUR THEMES SLIDER-->
+    <div class="slider-section section">
+
+        <div class="wrapper">
+            <h2 class="b-section-title-smaller">TAKE YOUR BUSINESS TO NEXT STEP WITH OUR PROFESSIONAL TEMPLATES</h2>
+
+            <p class="slider-section__desc">
+                We provide you with 14 themes to help you get started easily. Each theme is perfectly optimised for the best performance. Each theme has multiple colour options to accommodate your business look and feel.
+            </p>
+
+            <!-- SLIDER -->
+            <div class="slider-wrap">
+                <div onclick="prevTheme()" class="arrow--left-wrap">
+                    <div class="arrow arrow--left"></div>
+                </div>
+
+                <div onclick="nextTheme()" class="arrow--right-wrap">
+                    <div class="arrow arrow--right"></div>
+                </div>
+                <div class="slider-overflow">
+                    <div class="slider">
+                        <input type="radio" name="slider" id="s1" checked>
+                        <input type="radio" name="slider" id="s2">
+                        <input type="radio" name="slider" id="s3">
+                        <input type="radio" name="slider" id="s4">
+                        <input type="radio" name="slider" id="s5">
+                        <input type="radio" name="slider" id="s6">
+                        <input type="radio" name="slider" id="s7">
+                        <input type="radio" name="slider" id="s8">
+                        <input type="radio" name="slider" id="s9">
+                        <input type="radio" name="slider" id="s10">
+                        <input type="radio" name="slider" id="s11">
+                        <input type="radio" name="slider" id="s12">
+                        <input type="radio" name="slider" id="s13">
+                        <input type="radio" name="slider" id="s14">
+
+                        <label for="1" id="slide1">
+                          <img src="./images/themes/art.jpg" alt="">
+                        </label>
+                        <label for="2" id="slide2">
+                          <img src="./images/themes/kids.jpg" alt="">
+                        </label>
+                        <label for="3" id="slide3">
+                          <img  src="./images/themes/surf.jpg" alt="">
+                        </label>
+                        <label for="4" id="slide4">
+                          <img  src="./images/themes/purple.jpg" alt="">
+                        </label>
+                        <label for="5" id="slide5">
+                          <img  src="./images/themes/house.jpg" alt="">
+                        </label>
+                        <label for="6" id="slide6">
+                          <img src="./images/themes/sushi.jpg" alt="">
+                        </label>
+                        <label for="7" id="slide7">
+                          <img src="./images/themes/boxing.jpg" alt="">
+                        </label>
+                        <label for="8" id="slide8">
+                          <img src="./images/themes/market.jpg" alt="">
+                        </label>
+                        <label for="9" id="slide9">
+                          <img src="./images/themes/purple.jpg" alt="">
+                        </label>
+                        <label for="10" id="slide10">
+                          <img src="./images/themes/shades.jpg" alt="">
+                        </label>
+                        <label for="11" id="slide11">
+                          <img src="./images/themes/default.jpg" alt="">
+                        </label>
+                        <label for="12" id="slide12">
+                          <img src="./images/themes/fashion.jpg" alt="">
+                        </label>
+                        <label for="13" id="slide13">
+                          <img src="./images/themes/minimal.jpg" alt="">
+                        </label>
+                        <label for="14" id="slide14">
+                          <img src="./images/themes/default-light.jpg" alt="">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- SLIDER -->
+
+            <p class="slider-section__desc">
+                We provide you with 14 themes to help you get started easily. Each theme is perfectly optimised for the best performance. Each theme has multiple colour options to accommodate your business look and feel.
+            </p>
+
+            <div class="b-btn">
+                <button>START FREE TRIAL</button>
+                <small>No credit card required</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- FREETRIAL -->
+    <!-- DONE -->
+    <svg class="myCurve2" width="0" height="0">
+      <defs>
+        <clipPath id="myCurve2" clipPathUnits="objectBoundingBox">
+          <path
+            d="M 0,1
+                L 0,0
+                C .2 .13, .65 .20, 1 .22
+                L 1,1
+                C 1 1, .88 .80, 0 .77
+                Z"
+          />
+        </clipPath>
+      </defs>
+  </svg>
+    <div id="freetrial" class="freetrial section">
+        <div class="wrapper">
+
+            <div class="freetrial__title-wrap">
+                <h1>BUILT WITH SPEED IN MIND</h1>
+                <h4>LET YOUR CLIENTS EXPERIENCE IT</h4>
+            </div>
+
+            <div class="b-btn">
+                <button>START FREE TRIAL</button>
+                <small>No credit card required</small>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- WE-OFFER -->
+    <div id="about-us" class="we-offer section">
+        <div class="wrapper">
+            <h2 class="b-section-title">BRING OUT <span>THE BEST</span> OF YOUR BUSINESS</h2>
+
+            <div class="we-offer__wrap">
+
+                <div class="b-desc-item">
+                    <h6>No transaction fee</h6>
+                    <p>With our fixed pricing rate system, you can easily scale your shop without worrying about hidden fees listed in small text, and be ahead of the game at all times. Automatic payment is something we avoid using. We want our customers
+                        to be worry-free; which is why we will send you an invoice at the end of each month.</p>
+                </div>
+
+                <div class="b-desc-item">
+                    <h6>Lightning-fast performance</h6>
+                    <p>Our developers come from the Magento, Shopify, and WooCommerce platforms. With their knowledge and experience from all these platforms, we have taken the best from all and forged it into one system with one goal in mind: a performance
+                        that you can be proud of.</p>
+                </div>
+
+                <div class="b-desc-item">
+                    <h6>Mobile Optimization</h6>
+                    <p>This may sound like a standard feature. And it should be. But have you tried validating your shop for mobile devices? Purchases from mobile devices have skyrocketed and we are here to help you follow that trend.</p>
+                </div>
+
+
+                <div class="b-desc-item">
+                    <h6>Custom Themes</h6>
+                    <p>Can’t find a theme that suits your needs? It is not an issue; TAU can implement your design as soon as the HTML template is complete. This means that changing your e-commerce look to a completely new one takes less than 24h!</p>
+                </div>
+
+                <div class="b-desc-item">
+                    <h6>Out of the box optimization</h6>
+                    <p>Can’t believe how fast it is, and that it has a Google Page Insight score of 100%? Feel free to take a look at our demo store.</p>
+                </div>
+
+
+                <div class="b-desc-item">
+                    <h6>Support that cares</h6>
+                    <p>Standard support includes one monthly meeting, where we can touch base and make sure that everything is working according to your plan. Premium support includes 24/7 support where an operator will be always available to you in case
+                        of an emergency.</p>
+                </div>
+            </div>
+
+
+            <div class="b-btn">
+                <button>START FREE TRIAL</button>
+                <small>No credit card required</small>
+            </div>
+        </div>
+    </div>
+    <!-- DONE -->
+    <svg class="myCurve3" width="0" height="0">
+        <defs>
+          <clipPath id="myCurve3" clipPathUnits="objectBoundingBox" >
+        
+             
+                 <path
+              d="M 0,1
+                L 0,0
+                L 1,0
+                L 1,1
+                C .8 .90, .17 .87, 0 .85
+                Z"
+            />
+          </clipPath>
+        </defs>
+    </svg>
+
+    <!-- PRICING -->
+    <div id="pricing" class="pricing section">
+        <div class="wrapper">
+            <h2 class="b-section-title"> PRICING</h2>
+
+            <p class="pricing__desc">
+                We provide you with 14 themes to help you get started easily. Each theme is perfectly optimised for the best performance. Each theme has multiple colour options to accommodate your business look and feel.
+            </p>
+
+            <div class="pricing__wrap">
+                <div class="pricing__card">
+                    <div class="content">
+
+                        <div class="package">
+                            <p>49$<small>/mo</small></p>
+                            <span>STARTER PACKAGE</span>
+                        </div>
+
+                        <div class="border">
+                            <!-- <span></span> -->
+                        </div>
+
+                        <div class="desc">
+                            <p>150 orders per month</p>
+                            <p>2 administrators</p>
+                            <p>Acceptance of payment cards</p>
+                            <p>tau.shop domain of your choice</p>
+                            <p>Standard Themes</p>
+                            <p>Basic support</p>
+                        </div>
+
+                        <div class="btn-wrap">
+                            <button>START FREE TRIAL</button>
+                            <small>No credit card required</small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pricing__card pricing__card--most-popular">
+
+                    <div class="most-popular">MOST POPULAR</div>
+
+                    <div class="content">
+                        <div class="package">
+                            <p>89$<small>/mo</small></p>
+                            <span>ADVANCED PACKAGE</span>
+                        </div>
+
+                        <div class="border">
+                            <span></span>
+                        </div>
+
+                        <div class="desc">
+                            <p>600 orders per month</p>
+                            <p>5 administrators</p>
+                            <p>Acceptance of payment cards</p>
+                            <p>tau.shop domain of your choice</p>
+                            <p>Standard Themes</p>
+                            <p>Pro support</p>
+                        </div>
+
+                        <div class="btn-wrap">
+                            <button>START FREE TRIAL</button>
+                            <small>No credit card required</small>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="pricing__card">
+
+                    <div class="content">
+                        <div class="package">
+                            <p>299$<small>/mo</small></p>
+                            <span>ULTIMATE PACKAGE</span>
+                        </div>
+
+                        <div class="border"></div>
+
+                        <div class="desc">
+                            <p>3000 orders per month</p>
+                            <p>10 administrators</p>
+                            <p>Acceptance of payment cards</p>
+                            <p>tau.shop domain of your choice</p>
+                            <p>Pro Themes</p>
+                            <p>Premium support</p>
+                        </div>
+
+                        <div class="btn-wrap">
+                            <button>START FREE TRIAL</button>
+                            <small>No credit card required</small>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+            <p class="pricing__desc">
+                We provide you with 14 themes to help you get started easily. Each theme is perfectly optimised for the best performance. Each theme has multiple colour options to accommodate your business look and feel.
+            </p>
+
+        </div>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="features section">
+        <div class="wrapper">
+            <h2 class="b-section-title">FEATURES FOR YOUR SHOP ONLY</h2>
+
+            <p class="features__desc">
+                TAU Commerce has couple of core specific features that you usually get by installing a plugin or module. We believe that these features should be included in every shop. If you have additional requirements, we can develop features just for your shop.
+                An example would be an integration with existing customer loyalty programs or possible gift wrapping options on checkout. You can choose one of the many features and pay for only those that you want to use. This allows you to control your
+                expenses and business growth.
+
+            </p>
+
+            <div class="features__wrap">
+
+                <div class="b-desc-item first">
+                    <h6>Dynamic shipping price</h6>
+                    <p>Through years of e-commerce development we have found out that many sellers need dynamic shipping prices and most platforms utilize that by using 3rd party plugins or extensions. Shouldn’t that be a core feature? That is what we thought
+                        as well! We have developed our system with this in mind, now you can calculate each method price based on shipping country and shipment weight. Isn’t that convenient?</p>
+                </div>
+
+                <div class="b-desc-item second">
+                    <h6>Grouped products</h6>
+                    <p>Have you ever wanted to sell a “bundle” of products and show it as a “deal” product? We have come up with a way to do it out of the box! We have called it “Grouped products”. By using this product type you can easily bundle t-shirts
+                        and jeans as one product under one price, description, and most importantly - under one link that will help you market it more easily on social media platforms!</p>
+                </div>
+
+                <div class="b-desc-item third">
+                    <h6>Easy abandoned cart recovery</h6>
+                    <p>You can now easily try and recover abandoned carts with one simple click! Carts that have an e-mail address bound to them can be recovered after one day of inactivity. This is not an “extra” but instead a “core” feature that every
+                        system should implement. Forget about extensions and modules and custom features - we’ve got you covered.</p>
+                </div>
+
+
+
+                <div class="b-btn">
+                    <button>START FREE TRIAL</button>
+                    <small>No credit card required</small>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- DONE -->
+    <svg class="myCurve4" width="0" height="0">
+        <defs>
+          <clipPath id="myCurve4" clipPathUnits="objectBoundingBox">
+            <path
+              d="M 0,1
+                  L 0,0
+                  C .2 .11, .87 .15, 1 .16
+                  L 1,1
+                  C .9 .92, .35 .85, 0 .84
+                  Z"
+            />
+          </clipPath>
+        </defs>
+    </svg>
+
+    <!-- OUR CLIENTS -->
+    <div class="slider-section our-clients section">
+
+        <div class="wrapper">
+
+            <h2 class="b-section-title-smaller">TAKE A LOOK AT SOME OF THE SHOPS THAT ARE USING TAU COMMERCE</h2>
+
+            <p class="slider-section__desc">
+                We provide you with 14 themes to help you get started easily. Each theme is perfectly optimised for the best performance. Each theme has multiple colour options to accommodate your business look and feel.
+            </p>
+
+
+            <div class="slider-wrap">
+
+                <div onclick="prevClient()" class="arrow--left-wrap">
+                    <div class="arrow arrow--left"></div>
+                </div>
+
+                <div onclick="nextClient()" class="arrow--right-wrap">
+                    <div class="arrow arrow--right"></div>
+                </div>
+
+                <div class="slider-overflow">
+                    <div class="slider">
+                        <input type="radio" name="slider-c" id="c1" checked>
+                        <input type="radio" name="slider-c" id="c2">
+                        <input type="radio" name="slider-c" id="c3">
+                        <input type="radio" name="slider-c" id="c4">
+                        <input type="radio" name="slider-c" id="c5">
+
+                        <label for="1" id="slide-c-1">
+                          <img  src="./images/themes/art.jpg" alt="">
+                        </label>
+
+                        <label for="2" id="slide-c-2">
+                          <img  src="./images/themes/kids.jpg" alt="">
+                        </label>
+
+                        <label for="3" id="slide-c-3">
+                          <img  src="./images/themes/surf.jpg" alt="">
+                        </label>
+
+                        <label for="4" id="slide-c-4">
+                          <img src="./images/themes/purple.jpg" alt="">
+                        </label>
+
+                        <label for="5" id="slide-c-5">
+                          <img  src="./images/themes/house.jpg" alt="">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <p class="slider-section__desc">
+                We provide you with 14 themes to help you get started easily. Each theme is perfectly optimised for the best performance. Each theme has multiple colour options to accommodate your business look and feel.
+            </p>
+
+            <div class="b-btn">
+                <button>START FREE TRIAL</button>
+                <small>No credit card required</small>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <!-- DONE -->
+    <svg class="myCurve5" width="0" height="0">
+        <defs>
+          <clipPath id="myCurve5" clipPathUnits="objectBoundingBox" >
+              <path
+              d="M 0,1
+                L 0,0
+                 C .2 .22, .65 .27, 1 .34
+                L 1,1
+                L 1,1
+                Z"
+            />
+          </clipPath>
+        </defs>
+    </svg>
+    <div id="contact" class="footer section">
+        <div class="wrapper">
+            <h2 class="b-section-title"> DONT BE SHY <span>GIVE US A NUDGE</span> </h2>
+
+            <div class="footer__wrap">
+                <div class="b-desc-item">
+                    <h6>Legal information</h6>
+                    <div>
+                        <p class="bold">TAU Commerce doo</p>
+                        <p>Dr. Svetislava Kasapinovića 26</p>
+                        <p>26000 Pančevo, Serbia</p>
+                        <p>Business ID: 1235883</p>
+                        <p>VAT ID: 12399834</p>
+                    </div>
+                </div>
+
+                <div class="b-desc-item">
+                    <h6>Contact information</h6>
+                    <div>
+                        <p>Email: hello@taucommerce.com </p>
+                        <p>Phone: a +381(60)6624730</p>
+                        <p> Facebook: <a target="_blank" href="https://facebook.com/taucommerce">https://facebook.com/taucommerce</a></p>
+                        <p>Twitter: <a target="_blank" href=" https://twitter.com/taucommerce">https://twitter.com/taucommerce</a> </p>
+                        <p>Linkedin: <a target="_blank" href="https://linkedin.rs/taucommerce"> https://linkedin.rs/taucommerce</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

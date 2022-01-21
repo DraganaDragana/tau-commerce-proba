@@ -1,0 +1,82 @@
+body,
+input,
+select,
+button {
+    font-family: $roboto;
+}
+
+.wrapper {
+    max-width: 1365px;
+    /* max-width: 600px; */
+    padding: 0 15px;
+    margin: 0 auto;
+    @include respond-to(390) {
+        padding: 0 35px;
+    }
+    @include respond-to(900) {
+        max-width: 790px;
+    }
+    @include respond-to(1100) {
+        max-width: 950px;
+    }
+    @include respond-to(1200) {
+        padding: 0 60px;
+        max-width: 1365px;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.myCurve,
+.myCurve1,
+.myCurve2,
+.myCurve3,
+.myCurve4,
+.myCurve5 {
+    display: none;
+    @include respond-to(1200) {
+        display: block;
+    }
+}
+
+.section {
+    padding: 50px 0;
+    @include respond-to(900) {
+        padding: 90px 0;
+    }
+}
+
+.talk-to-a-profesional {
+    background: $primary;
+    color: $text-color-white;
+    padding: 21px 15px 20px;
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    z-index: 100;
+    display: none;
+    @include respond-to(700) {
+        display: block;
+    }
+    p {
+        font-weight: 700;
+        border-bottom: 3px solid $text-color-white;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    span {
+        font-size: 12px;
+        display: block;
+        &:first-of-type {
+            margin-bottom: 2px;
+        }
+    }
+}

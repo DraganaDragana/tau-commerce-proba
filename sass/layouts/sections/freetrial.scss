@@ -1,0 +1,82 @@
+.freetrial {
+    background: $primary;
+    // background: black;
+    // padding: 60px 0;
+    clip-path: url("#myCurve2");
+    @include respond-to(1200) {
+        position: relative;
+        z-index: 2;
+    }
+    &.section {
+        @include respond-to(1200) {
+            padding: 315px 0 215px;
+        }
+    }
+    .wrapper {
+        /* max-width: 1276px; */
+        display: flex;
+        flex-direction: column;
+        @include respond-to(1200) {
+            max-width: 1365px;
+        }
+    }
+    &__title-wrap {
+        @include respond-to(1360) {
+            margin-left: 95px;
+        }
+    }
+    h1 {
+        color: $bg-color-light;
+        text-transform: uppercase;
+        font-size: 43px;
+        font-weight: 700;
+        font-family: $roboto-condensed;
+        @include respond-to(700) {
+            font-size: 55px;
+        }
+        @include respond-to(900) {
+            font-size: 71px;
+        }
+        @include respond-to(1200) {
+            font-size: 90px;
+        }
+        @include respond-to(1360) {
+            font-size: 107px;
+        }
+    }
+    h4 {
+        color: $text-color-dark-1;
+        font-family: $roboto-condensed;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 29px;
+        @include respond-to(700) {
+            font-size: 37px;
+        }
+        @include respond-to(900) {
+            font-size: 45px;
+        }
+        @include respond-to(1200) {
+            font-size: 57px;
+            margin-top: -8px;
+        }
+        @include respond-to(1360) {
+            font-size: 67px;
+        }
+    }
+    .b-btn {
+        align-self: flex-end;
+        /* margin-top: 70px; */
+        @include respond-to(1200) {
+            margin-top: 70px;
+        }
+        button {
+            background: $bg-color-dark;
+            color: $primary;
+            &:hover {
+                /* background: var(--bg-color-light); */
+                color: $text-color-white;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.b-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-top: 52px;
+}
+
+.b-btn button {
+    font-weight: 700;
+    color: $text-color-white;
+    background-color: $primary;
+    text-transform: uppercase;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 17px 35px;
+    display: block;
+    transition: all 0.4s;
+    &:hover {
+        color: $text-color-dark-1;
+    }
+}
+
+.b-btn small {
+    font-size: 15px;
+    color: $text-color-dark-1;
+}
+
+@media screen and (min-width: 900px) {
+    .b-btn button {
+        font-size: 23px;
+        padding: 17px 39px;
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .b-btn button {
+        font-size: 26px;
+        padding: 22px 44px;
+    }
+}

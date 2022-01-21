@@ -1,0 +1,65 @@
+.features {
+    // padding: 60px 0;
+    background: $bg-color-light;
+    // background: red;
+    color: $text-color-dark-1;
+    clip-path: url("#myCurve4");
+    &.section {
+        @include respond-to(1200) {
+            padding: 264px 0 250px;
+        }
+    }
+    .b-section-title {
+        margin-bottom: 26px;
+    }
+    &__desc {
+        font-size: 17px;
+        line-height: 22.5px;
+        margin-bottom: 54px;
+        max-width: 780px;
+    }
+    &__wrap {
+        display: grid;
+        gap: 30px;
+        @include respond-to(700) {
+            grid-template-columns: 1fr 1fr;
+            gap: 55px 44px;
+        }
+        @include respond-to(900) {
+            gap: 55px 77px;
+        }
+    }
+    .b-btn {
+        margin-top: 0;
+        @include respond-to(700) {
+            align-self: flex-end;
+        }
+        button:hover {
+            color: $text-color-dark-1;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .features .first {
+        grid-area: first;
+    }
+    .features .second {
+        grid-area: second;
+    }
+    .features .third {
+        grid-area: third;
+    }
+    .features .third {
+        grid-area: third;
+    }
+    .features .b-btn {
+        grid-area: b-btn;
+        margin-top: 55px;
+    }
+    .features__wrap {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "first second third" "b-btn b-btn b-btn";
+        gap: 0 88px;
+    }
+}

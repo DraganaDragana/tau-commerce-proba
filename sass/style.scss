@@ -1,0 +1,33 @@
+@import "./imports/basic.scss";
+//font
+$roboto: "Roboto",
+sans-serif;
+$roboto-condensed: "Roboto Condensed",
+sans-serif;
+//colors
+$bg-color-dark: #292929;
+$bg-color-light: #f0f0f0;
+$bg-color-primary: #de5456;
+$text-color-white: #ffffff;
+$text-color-dark-1: #292929;
+$text-color-dark-2: #171717;
+$primary: #de5456;
+// b-code
+@import "./imports/b-code/b-btn.scss";
+@import "./imports/b-code/b-desc-item.scss";
+@import "./imports/b-code/b-section-title.scss";
+// layouts
+@import "./layouts/common.scss";
+// @import "./layouts/layout.scss";
+@import "./layouts/sections/header.scss";
+@import "./layouts/sections/hero.scss";
+@import "./layouts/sections/sell.scss";
+@import "./layouts/sections/payment.scss";
+@import "./layouts/sections/slider-section.scss";
+@import "./layouts/sections/freetrial.scss";
+@import "./layouts/sections/we-offer.scss";
+@import "./layouts/sections/pricing.scss";
+@import "./layouts/sections/features.scss";
+@import "./layouts/sections/footer.scss";
+// try slider here
+// @import "./layouts/slider.scss";

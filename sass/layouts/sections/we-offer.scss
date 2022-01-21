@@ -1,0 +1,47 @@
+.we-offer {
+    background: $bg-color-dark;
+    // padding: 60px 0;
+    color: $text-color-white;
+    clip-path: url("#myCurve3");
+    &.section {
+        @include respond-to(1200) {
+            padding: 225px 0 217px;
+            margin-top: -200px;
+        }
+    }
+    .b-section-title {
+        margin-bottom: 50px;
+        @include respond-to(700) {
+            margin-bottom: 77px;
+        }
+    }
+    &__wrap {
+        display: grid;
+        gap: 30px;
+        @include respond-to(700) {
+            grid-template-columns: 1fr 1fr;
+            gap: 55px 44px;
+        }
+        @include respond-to(900) {
+            gap: 55px 77px;
+        }
+        @include respond-to(1200) {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 51px 85px;
+        }
+    }
+    .b-desc-item {
+        p {
+            opacity: 0.5;
+        }
+    }
+    .b-btn {
+        margin-top: 48px;
+        button:hover {
+            color: $text-color-dark-1;
+        }
+        small {
+            color: $text-color-white;
+        }
+    }
+}

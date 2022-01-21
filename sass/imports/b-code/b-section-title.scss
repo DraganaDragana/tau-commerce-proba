@@ -1,0 +1,53 @@
+.b-section-title {
+  font-family: $roboto-condensed;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.b-section-title span {
+  color: $primary;
+}
+
+@media screen and (min-width: 700px) {
+  .b-section-title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .b-section-title {
+    font-size: 46px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .b-section-title {
+    font-size: 52px;
+  }
+}
+
+.b-section-title-smaller {
+  font-family: $roboto-condensed;
+  text-transform: uppercase;
+  color: $text-color-dark-1;
+  font-weight: 700;
+  text-align: center;
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 23px;
+}
+
+@media screen and (min-width: 700px) {
+  .b-section-title-smaller {
+    font-size: 33px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .b-section-title-smaller {
+    font-size: 36px;
+  }
+}

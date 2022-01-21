@@ -1,0 +1,53 @@
+.footer {
+    background: $bg-color-dark;
+    // background: red;
+    color: $text-color-white;
+    padding: 60px 0;
+    clip-path: url("#myCurve5");
+    @include respond-to(1200) {
+        padding-top: 280px;
+        margin-top: -50px;
+    }
+    .b-section-title {
+        text-align: center;
+        margin-bottom: 30px;
+        @include respond-to(760) {
+            text-align: left;
+        }
+    }
+    &__wrap {
+        display: grid;
+        gap: 40px;
+        @include respond-to(760) {
+            // grid-template-columns: 1fr 1fr;
+            // gap: 20px;
+            display: flex;
+            gap: 60px;
+        }
+    }
+    .b-desc-item {
+        text-align: center;
+        @include respond-to(760) {
+            text-align: left;
+        }
+        a {
+            color: $text-color-white;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        p {
+            opacity: 0.5;
+        }
+        .bold {
+            font-size: 19px;
+            font-weight: 700;
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .footer .b-desc-item p {
+        line-height: 29px;
+    }
+}
