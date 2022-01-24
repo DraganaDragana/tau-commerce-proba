@@ -1,28 +1,2 @@
-/******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	// The require scope
-/******/ 	var __webpack_require__ = {};
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/************************************************************************/
-var __webpack_exports__ = {};
-/*!********************!*\
-  !*** ./style.scss ***!
-  \********************/
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-/******/ })()
-;
+(()=>{document.getElementById("s".concat(1)).checked=!0;document.getElementById("c".concat(1)).checked=!0,document.getElementsByClassName("header__menu")[0].addEventListener("click",(function(){console.log("DKDK"),document.querySelector(".header__menu").classList.toggle("open-nav"),document.querySelector(".sidebar").classList.toggle("open-sidebar"),document.querySelector(".sidebar").classList.contains("open-sidebar")?document.getElementsByTagName("body")[0].style.overflow="hidden":document.getElementsByTagName("body")[0].style.overflow="auto"}));var e=function(){innerWidth>=900&&(document.querySelector(".sidebar").classList.remove("open-sidebar"),document.querySelector(".header__menu").classList.remove("open-nav"),document.body.style.overflow="auto")};addEventListener("DOMContentLoaded",e),addEventListener("resize",e)})();
 //# sourceMappingURL=main.js.map

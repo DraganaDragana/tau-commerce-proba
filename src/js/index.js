@@ -10,6 +10,7 @@
 // }, 4000);
 
 // Our themes
+
 var s = 1;
 document.getElementById(`s${s}`).checked = true;
 
@@ -52,6 +53,7 @@ function prevClient() {
 
 // toggle nav
 function toggleNav() {
+    console.log("DKDK")
     document.querySelector('.header__menu').classList.toggle('open-nav');
 
     document.querySelector('.sidebar').classList.toggle('open-sidebar');
@@ -65,6 +67,7 @@ function toggleNav() {
     }
 }
 
+document.getElementsByClassName('header__menu')[0].addEventListener('click', toggleNav)
 
 //on desktop hide mobile menu when resize
 const resize = () => {
