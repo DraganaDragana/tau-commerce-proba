@@ -11,6 +11,8 @@
 
 // Our themes
 
+// Function for themes slider
+
 var s = 1;
 document.getElementById(`s${s}`).checked = true;
 
@@ -30,7 +32,13 @@ function prevTheme() {
     document.getElementById(`s${s}`).checked = true;
 }
 
-// Our clients
+document.getElementsByClassName('prev-theme')[0].addEventListener('click', prevTheme)
+
+document.getElementsByClassName('next-theme')[0].addEventListener('click', nextTheme);
+
+
+
+// Function for our clients slider
 var c = 1;
 document.getElementById(`c${c}`).checked = true;
 
@@ -50,10 +58,19 @@ function prevClient() {
     document.getElementById(`c${c}`).checked = true;
 }
 
+document
+    .getElementsByClassName('prev-client')[0]
+    .addEventListener('click', prevClient);
+
+document
+    .getElementsByClassName('next-client')[0]
+    .addEventListener('click', nextClient);
+
+
+
 
 // toggle nav
 function toggleNav() {
-    console.log("DKDK")
     document.querySelector('.header__menu').classList.toggle('open-nav');
 
     document.querySelector('.sidebar').classList.toggle('open-sidebar');
@@ -68,6 +85,10 @@ function toggleNav() {
 }
 
 document.getElementsByClassName('header__menu')[0].addEventListener('click', toggleNav)
+
+document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', toggleNav)
+})
 
 //on desktop hide mobile menu when resize
 const resize = () => {
@@ -86,10 +107,9 @@ addEventListener('resize', resize);
 
 
 
-
+//you don't need this function for now
 function gotoBottom(id) {
     var scrollDiv = document.getElementById(id).offsetTop;
     console.log(scrollDiv);
     window.scrollTo({ top: scrollDiv });
-
 }
